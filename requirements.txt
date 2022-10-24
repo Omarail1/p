@@ -1,2 +1,2 @@
-pip install googlesearch-python==1.0.1
-pip install cloudscraper
+googlesearch-python==1.0.1
+cloudscraper
