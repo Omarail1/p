@@ -1,0 +1,9 @@
+view_items.php?id=
+home.php?cat=
+item_book.php?CAT=
+www/index.php?page=
+schule/termine.php?view=
+goods_detail.php?data=
+storemanager/contents/item.php?page_code=
+view_items.php?id=
+customer/board.htm?mode=
