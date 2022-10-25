@@ -49,8 +49,8 @@ def SQL_omar(ulr_n):
     try:
         n = scraper.get(ulr_n).text
         r = scraper.get(ulr_n+"'' or -- -'").text
-        om = scraper.get(ulr_n+"*").text
-        if len(r) != len(n) or len(r) != len(om) :
+#         om = scraper.get(ulr_n+"*").text
+        if len(r) != len(n):
             Download_link(ulr_n)
             print(f'Saved to a file => {ulr_n}')
             v = {"om":ulr_n}
