@@ -49,7 +49,8 @@ def SQL_omar(ulr_n):
     try:
         n = scraper.get(ulr_n).text
         r = scraper.get(ulr_n+"'' or -- -'").text
-#         om = scraper.get(ulr_n+"*").text
+        t(8)
+
         if len(r) != len(n):
             Download_link(ulr_n)
             print(f'Saved to a file => {ulr_n}')
