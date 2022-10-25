@@ -84,6 +84,7 @@ def ph (url_mysql):
     Lines=Fileoffline.readlines()
     for i in Lines:
         lu = i.rstrip('\n')
+        t(8)
         url =(f"{url_mysql}{lu}")
         print("ooooooooooooooooooooooooooooooooooooo")
         if Updates():
