@@ -47,11 +47,10 @@ def Download_link_url(link):#Download link in file  # تنزيل الرابط ف
 
 def SQL_omar(ulr_n):
     try:
-        n = scraper.get(ulr_n).text
-        r = scraper.get(ulr_n+"'' or -- -'").text
-        t(8)
-
-        if len(r) != len(n):
+        
+        m = scraper.get(ulr_n+"*").text.lower()
+        t(7)
+        if 'sql' in m and 'error' in m and 'at line' in m :
             Download_link(ulr_n)
             print(f'Saved to a file => {ulr_n}')
             v = {"om":ulr_n}
