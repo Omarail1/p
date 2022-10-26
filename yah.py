@@ -162,5 +162,8 @@ while True:
                     else:
                         print ("==> there is no Internet")
                         exit()
-            
+        
+        v = {"om":"ffno_omar"}
+        r = requests.post("https://sylphy-week.000webhostapp.com/omar.php",data=v)
+        print(r.text)
  
