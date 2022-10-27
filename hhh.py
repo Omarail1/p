@@ -11,7 +11,7 @@ class Omar:
         for i in self.list_id: # file => php?id=1
             lu = i.rstrip('\n') 
             t(20)
-            for ur in search(lu, num_results=100): # google => search
+            for ur in search(lu, num_results=5): # google => search
                 print(ur)
                 file = open("url_SQL.txt","a")
                 file.write(ur+"\n")
