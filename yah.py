@@ -123,8 +123,8 @@ while True:
                 # print(url_mysql)
                 m1 = url_mysql.split('=')[0]
                 ulr_n = (m1+"=1")
-                print(ulr_n)
-                if file_if(ulr_n):
+#                 print(ulr_n)
+                if phl (ulr_n):
                     # print('This link exists') #هذا الرابط موجود
                     continue
                 else:     
@@ -144,7 +144,7 @@ while True:
                         exit()
             else:
                 ur = url_mysql
-                if file_if(ur):
+                if phl (ur):
                     # print('This link exists') #هذا الرابط موجود
                     continue
                 else:  
