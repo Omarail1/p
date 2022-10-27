@@ -49,7 +49,7 @@ def SQL_omar(ulr_n):
     try:
         
         m = scraper.get(ulr_n+"*").text.lower()
-        t(7)
+        t(5)
         if 'sql' in m and 'error' in m and 'at line' in m :
             Download_link(ulr_n)
             print(f'Saved to a file => {ulr_n}')
@@ -89,7 +89,7 @@ def ph (url_mysql):
         if Updates():
             if phl(url):
                 print('====popopopopo')
-                compile
+                continue
             else:
                 print(f'===> {url}')
                 SQL_omar(url)
@@ -126,7 +126,7 @@ while True:
                 print(ulr_n)
                 if file_if(ulr_n):
                     # print('This link exists') #هذا الرابط موجود
-                    compile
+                    continue
                 else:     
                     if Updates():
                         if url_Fuhais(ulr_n) == 404:
@@ -146,7 +146,7 @@ while True:
                 ur = url_mysql
                 if file_if(ur):
                     # print('This link exists') #هذا الرابط موجود
-                    compile
+                    continue
                 else:  
                     if Updates():
                         if url_Fuhais(ur) == 404:
